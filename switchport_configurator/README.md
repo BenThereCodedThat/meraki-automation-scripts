@@ -1,7 +1,7 @@
 # Meraki Switch Port Bulk Updater
 
 This Python script allows you to **bulk update Cisco Meraki switch ports** using an Excel spreadsheet.  
-It supports updating port descriptions, VLANs, trunk/access types, and more — with smart change detection to avoid unnecessary API calls.
+It supports updating port descriptions, VLANs, trunk/access types, and more - with smart change detection to avoid unnecessary API calls.
 
 ---
 
