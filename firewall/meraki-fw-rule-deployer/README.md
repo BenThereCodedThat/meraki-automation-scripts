@@ -34,7 +34,7 @@ Therefore, this script:
 
 | File                     | Purpose                                           |
 |--------------------------|---------------------------------------------------|
-| `meraki_fw_rule_loader.py` | Main script for applying rules                    |
+| `meraki_fw_rule_deployer.py` | Main script for applying rules                    |
 | `meraki_fw_rules.xlsx`   | Excel spreadsheet with firewall rule definitions  |
 | `*_fw_backup_*.json`     | Backup of current firewall rules (per firewall)   |
 | `requirements.txt`       | Python dependency list                            |
