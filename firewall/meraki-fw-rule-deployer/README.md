@@ -70,7 +70,7 @@ Each row in the Excel sheet represents **one firewall rule**, with the following
 | 1      | `Branch-FW01` | Block Social Media        | deny   | any      | any      | any                | any      | fqdn     | `*.facebook.com`   | any      |
 | 2      | `Branch-FW01` | Allow Internet DNS        | allow  | udp      | vlan     | Guest-Network      | any      | object   | Public-DNS         | 53       |
 | 3      | `Branch-FW01` | Allow Internet HTTPS      | allow  | tcp      | vlan     | Guest-Network      | any      | object   | Public-Web         | 443      |
-| 4      | `Branch-FW01` | Block Guest to Corp VLAN  | deny   | any      | vlan     | Guest-Network      | any      | vlan     | Corp-Network       | any      |
+| 4      | `Branch-FW01` | Block Guest to internal  | deny   | any      | vlan     | Guest-Network      | any      | cidr     | 10.0.0.0/8       | any      |
 | 5      | `Branch-FW01` | Deny All Remaining        | deny   | any      | any      | any                | any      | any      | any                | any      |
 
 > 🔹 **Device Name** must match the name or serial of the MX device in Meraki Dashboard  
