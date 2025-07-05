@@ -43,12 +43,10 @@ Therefore, this script:
 ## 📦 Prerequisites
 
 - Python 3.8+
-- Meraki Python SDK (`meraki`)
-- Other packages: `requests`, `pandas`, `openpyxl`
+- Install dependencies using:
 
 ```bash
-pip install meraki requests pandas openpyxl
-```
+pip install -r requirements.txt
 
 ---
 
