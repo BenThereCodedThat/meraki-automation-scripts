@@ -1,4 +1,4 @@
-# Meraki Firewall Rule Loader
+# Meraki Firewall Rule Deployer
 
 This script automates pushing L3 firewall rules to Cisco Meraki MX firewalls using an Excel spreadsheet.  
 It supports modern policy object logic while maintaining full compatibility with current Meraki API limitations.
