@@ -47,7 +47,7 @@ Therefore, this script:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🔐 API Key
