@@ -1,4 +1,4 @@
-# Meraki Firewall Rule Deployer
+# Meraki MX Rule Deployer
 
 This script automates pushing L3 firewall rules to Cisco Meraki MX firewalls using an Excel spreadsheet.  
 It supports modern policy object logic while maintaining full compatibility with current Meraki API limitations.
@@ -88,13 +88,13 @@ Each row in the Excel sheet represents **one firewall rule**, with the following
 ### Basic
 
 ```bash
-python meraki_fw_rule_loader.py
+python meraki_mx_rule_loader.py
 ```
 
 ### With CLI Options
 
 ```bash
-python meraki_fw_rule_loader.py --api-key YOUR_API_KEY --dry-run --max-threads 10
+python meraki_mx_rule_loader.py --api-key YOUR_API_KEY --dry-run --max-threads 10
 ```
 
 - `--dry-run`: Preview rules without applying them
@@ -123,7 +123,7 @@ This is necessary because **Meraki does not support multiple CIDRs in a single A
 Before any rule changes, the script saves the existing firewall rules to:
 
 ```
-<device_name>_fw_backup_<timestamp>.json
+<device_name>_mx_backup_<timestamp>.json
 ```
 
 This ensures rollback capability in case of error.
