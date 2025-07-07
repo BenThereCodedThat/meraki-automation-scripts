@@ -9,7 +9,7 @@ import pprint
 
 parser = argparse.ArgumentParser(description='Push Meraki firewall rules from Excel.')
 parser.add_argument('--api-key', help='Meraki API Key (or use MERAKI_DASHBOARD_API_KEY)')
-parser.add_argument('--excel-file', default='meraki_fw_rules.xlsx')
+parser.add_argument('--excel-file', default='meraki_mx_rules.xlsx')
 parser.add_argument('--dry-run', action='store_true')
 parser.add_argument('--max-threads', type=int, default=5)
 args = parser.parse_args()
@@ -238,7 +238,7 @@ def process_firewall(device_ref, ruleset, dashboard, device_map, script_dir, dry
         return f"[✓] Dry run complete for {name}"
     else:
         ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        bkp = script_dir / f"{name}_fw_backup_{ts}.json"
+        bkp = script_dir / f"{name}_mx_backup_{ts}.json"
         with open(bkp, "w") as f:
             json.dump(backup, f, indent=2)
         dashboard.appliance.updateNetworkApplianceFirewallL3FirewallRules(net_id, rules=rules)
