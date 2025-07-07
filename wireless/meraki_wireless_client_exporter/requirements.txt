@@ -1,3 +1,3 @@
-meraki
-pandas
-openpyxl
+meraki>=1.40.0
+pandas>=1.1.0
+openpyxl>=3.0.0
